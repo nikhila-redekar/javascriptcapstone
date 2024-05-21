@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Tasks</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#user-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#todo-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.todo-description {
+    font-weight: bold;
+}
+
+.todo-deadline {
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <h1>To-Do Tasks</h1>
+    <label for="users">Select User:</label>
+    <select id="users" onchange="getToDoTasks()">
+        <!-- Dropdown options will be populated dynamically -->
+    </select>
+    <div id="tasks">
+        <!-- Tasks will be displayed here -->
+    </div>
+
+   <script src="/scripts/user-todos.js"></script>
+</body>
+</html>

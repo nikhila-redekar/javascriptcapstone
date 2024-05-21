@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New ToDo Task</title>
+</head>
+<body>
+    <h1>New ToDo Task</h1>
+    <form id="todoForm">
+        <label for="user">Assign To:</label>
+        <select id="user" name="userid">
+            <!-- Dropdown options will be populated dynamically -->
+        </select><br><br>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <!-- Dropdown options will be populated dynamically -->
+        </select><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline"><br><br>
+
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br><br>
+
+        <button type="button" onclick="addTodo()">Add ToDo</button>
+    </form>
+
+<script src="/scripts/new-todo.js"></script>
+</body>
+</html>
