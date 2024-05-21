@@ -51,3 +51,4 @@ window.onload = function() {
     populateUsersDropdown();
     populateCategoriesDropdown();
 };
+
