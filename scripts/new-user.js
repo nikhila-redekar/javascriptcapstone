@@ -8,18 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmPassword = document.getElementById("confirm-password").value;
         const userData = {"name":`${name}`,"username":`${username}`, "password":`${password}`};
        
-        console.log(`${JSON.stringify(userData)}`);
+        //console.log(`${JSON.stringify(userData)}`);
         const pass = userData.password;
         
         if (pass !== confirmPassword) {
             alert('Passwords do not match. Please try again.');
             return;
         }
-        console.log(`${userData.username}`);
+        //console.log(`${userData.username}`);
         fetch(`http://localhost:8083/api/username_available/${userData.username}`)
             .then(response => response.json())
             .then(data => {
-                console.log(`${data}`);
+                //console.log(`${data}`);
                 if (data.available === false ) {
                     alert('Username is already in use. Please choose another.');
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function addUser(userData) {
-        console.log(`${JSON.stringify(userData)}`);
+        //console.log(`${JSON.stringify(userData)}`);
         fetch('http://localhost:8083/api/users', {
             method: 'POST',
             headers: {

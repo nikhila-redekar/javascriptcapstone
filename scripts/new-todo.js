@@ -24,17 +24,32 @@ function populateCategoriesDropdown() {
             const option = document.createElement("option");
             option.text = category.name; 
             categoryDropdown.add(option);
+            console.log(`category`);
         });
-    })
+    })    
     .catch(error => console.error('Error fetching categories:', error));
 }
 
 // Function to add new ToDo task
 function addTodo() {
-    const formData = new FormData(document.getElementById("todoForm"));
+   // const formData = new FormData(document.getElementById("todoForm"));
+    const userId = document.getElementById("user").value;
+    const category = document.getElementById("category").value;
+    const description = document.getElementById("description").value;
+    const deadline = document.getElementById("deadline").value;
+    const priority = document.getElementById("priority").value;
+    //const completed = document.getElementById("completed").value;
+
+    const userData = {"userid":Number(`${userId}`),"category":`${category}`, "description":`${description}`, "deadline":`${deadline}`, "priority":`${priority}`};
+
+    //console.log(`userData`);
+console.log(`${JSON.stringify(userData)}`);
+
     fetch('http://localhost:8083/api/todos', {
         method: 'POST',
-        body: formData
+        headers:{"content-type":"application/json"},
+        body: JSON.stringify(userData)
+
     })
     .then(response => {
         if (response.ok) {
@@ -42,6 +57,7 @@ function addTodo() {
         } else {
             alert('Failed to add ToDo task.');
         }
+        response.json();
     })
     .catch(error => console.error('Error adding ToDo task:', error));
 }
