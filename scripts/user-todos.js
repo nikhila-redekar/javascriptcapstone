@@ -14,6 +14,7 @@ function getToDoTasks() {
                     <p><strong>Priority:</strong> ${task.priority}</p>
                     <p><strong>Completed:</strong> ${task.completed ? "✓" : "❌"}</p>
                 </div>
+
             `;
         });
     })

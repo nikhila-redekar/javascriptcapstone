@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    /*background-color: #333;*/
+    background-color: #eaafc8;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    /*background-image: url('https://via.placeholder.com/150');*/
+    background-color: #00B4DB;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.jumbotron .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Todo List Styles */
+.container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Footer Styles */
+footer {
+    /*background-color: #333;*/
+    background-color: #eaafc8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

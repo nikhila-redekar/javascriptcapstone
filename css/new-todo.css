@@ -1,0 +1,23 @@
+/* Navigation Bar Styles */
+.navbar {
+    /*background-color: #333;*/
+    background-color: #eaafc8;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
