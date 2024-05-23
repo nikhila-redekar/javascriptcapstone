@@ -13,7 +13,8 @@ body {
 /* Navigation Bar Styles */
 .navbar {
     /*background-color: #333;*/
-    background-color: #eaafc8;
+    /*background-color: #eaafc8;*/
+    background-color: #fc46aa;
     color: #fff;
     padding: 10px 0;
 }
@@ -37,10 +38,11 @@ body {
 /* Jumbotron Styles */
 .jumbotron {
     /*background-image: url('https://via.placeholder.com/150');*/
-    background-color: #00B4DB;
+   /* background-color: #00B4DB;*/
+   background-color: rgb(255, 247, 196);
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: black;
     padding: 100px 0;
 }
 
@@ -84,7 +86,7 @@ body {
 /* Footer Styles */
 footer {
     /*background-color: #333;*/
-    background-color: #eaafc8;
+    background-color: #fc46aa;
     color: #fff;
     text-align: center;
     padding: 10px 0;

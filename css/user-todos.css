@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ee9ca7;
+   /* background-color: #ee9ca7;*/
+   background-color: rgb(255, 247, 196);
 }
 
 h1 {
     text-align: center;
     margin-top: 50px;
-    background-color: rgb(255, 0, 136);
+    /*background-color: rgb(255, 0, 136);*/
 }
 
 label {
@@ -53,7 +54,8 @@ label {
     /* Navigation Bar Styles */
 .navbar {
     /*background-color: #333;*/
-    background-color: #eaafc8;
+   /* background-color: #eaafc8;*/
+    background-color: #fc46aa;
     color: #fff;
     padding: 10px 0;
 }
@@ -72,4 +74,17 @@ label {
 .nav-links li a {
     text-decoration: none;
     color: #fff;
+}
+
+.card-body {
+    background-color: aqua;
+    border-color: #666;
+}
+.card {
+    margin-top: 20px;
+    text-align: center;
+}
+.card-title {
+    font-family: italic bold;
+    font-size: 20px;
 }

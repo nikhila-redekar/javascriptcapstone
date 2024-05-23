@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Handle form submission
     document.getElementById('new-user-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const name = document.getElementById("fname").value;
+    event.preventDefault();
+    const name = document.getElementById("fname").value;
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm-password").value;
