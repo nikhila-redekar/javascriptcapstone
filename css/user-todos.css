@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
    /* background-color: #ee9ca7;*/
-   background-color: rgb(255, 247, 196);
+   /*background-color: rgb(255, 247, 196);*/
+   background-color: #f0f0f0; 
 }
 
 h1 {
@@ -77,8 +78,10 @@ label {
 }
 
 .card-body {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    background-color: #8806ce;
     border-color: #666;
+    color: white;
 }
 .card {
     margin-top: 20px;

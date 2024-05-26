@@ -9,6 +9,18 @@
 <link rel="stylesheet" href="/css/new-user.css">
 </head>
 <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <span class="navbar-brand">Todo Website</span>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/user-todos.html">Todo's</a></li>
+                    <li><a href="/new-todo.html">New Todo</a></li>
+                    <li><a href="/new-user.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
     <h1>Register New User</h1>
     <form id="new-user-form">
         <label for="name">Name:</label>
@@ -21,7 +33,6 @@
         <input type="password" id="confirm-password" required><br>
         <button type="submit">Register</button>
     </form>
-
     <script src="/scripts/new-user.js"></script> <!-- Script to handle form submission and check username availability -->
 </body>
 </html>

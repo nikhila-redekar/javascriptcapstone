@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="/css/new-todo.css">
-    <title>New ToDo Task</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add ToDo Task</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/new-todo.css">
 </head>
 <body>
-     <!-- Navigation Bar -->
+<!-- Navigation Bar -->
      <nav class="navbar">
         <div class="container">
             <span class="navbar-brand">Todo Website</span>
@@ -21,34 +21,54 @@
             </ul>
         </div>
     </nav>
-    <h1>New ToDo Task</h1>
-    <form id="todoForm">
-        <label for="user">Assign To:</label>
-        <select id="user" name="userid">
-            <!-- Dropdown options will be populated dynamically -->
-        </select><br><br>
-
-        <label for="category">Category:</label>
-        <select id="category" name="category">
-            <!-- Dropdown options will be populated dynamically -->
-       </select><br><br>
-
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
-
-        <label for="deadline">Deadline:</label>
-        <input type="date" id="deadline" name="deadline"><br><br>
-
-        <label for="priority">Priority:</label>
-        <select id="priority" name="priority">
-            <option value="Low">Low</option>
-            <option value="Medium">Medium</option>
-            <option value="High">High</option>
-        </select><br><br>
-
-        <button type="button" onclick="addTodo()">Add ToDo</button>
+<div class="containerform">
+    <form id="todoForm" class="col-md-6">
+        <h2>Add ToDo Task</h2>
+        <!-- User Dropdown -->
+        <div class="form-group">
+            <label for="user">User:</label>
+            <select id="user" class="form-control">
+                <!-- Users will be populated here -->
+            </select>
+        </div>
+        <!-- Category Dropdown -->
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" class="form-control">
+                <!-- Categories will be populated here -->
+            </select>
+        </div>
+        <!-- Description -->
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" class="form-control" required>
+        </div>
+        <!-- Deadline -->
+        <div class="form-group">
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" class="form-control" required>
+        </div>
+        <!-- Priority -->
+        <div class="form-group">
+            <label for="priority">Priority:</label>
+            <select id="priority" class="form-control">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+        <!-- Submit Button -->
+        <button type="button" class="btn" onclick="addTodo()">Add Task</button>
+        <!-- Error Message -->
+        <div id="errorMessage" class="error"></div>
     </form>
+</div>
 
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript code for populating dropdowns and adding tasks -->
 <script src="/scripts/new-todo.js"></script>
+
 </body>
-</html> 
+</html>
