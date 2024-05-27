@@ -50,3 +50,11 @@
     .error {
         color: red;
     }
+    .navbar-brand{
+        font-family:'Pacifico', cursive;
+        font-size: 40px;
+    
+}
+.addtodo{
+    font-family:'Pacifico', cursive;
+}

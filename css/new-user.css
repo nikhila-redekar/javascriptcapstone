@@ -36,18 +36,19 @@ border-radius: 5px;
 button[type="submit"] {
 width: 100%;
 /*background-color: #4caf50;*/
-background-color: aqua;
-color: black;
+/*background-color: aqua;*/
+background-color: #8806ce;
+color: white;
 padding: 10px;
 border: none;
 border-radius: 5px;
 cursor: pointer;
 }
 
-button[type="submit"]:hover {
-/*background-color: #45a049;*/
+/*button[type="submit"]:hover {
+background-color: #45a049;
 background-color: rgb(255, 247, 196);
-}
+}*/
 
 .error-message {
 color: red;
@@ -80,4 +81,12 @@ margin-top: 10px;
 .registration-image {
     max-width: 100%;
     height: auto;
+}
+.navbar-brand{
+    font-family:'Pacifico', cursive;
+    font-size: 40px;
+    }
+.reg{
+    font-family:'Pacifico', cursive;
+
 }

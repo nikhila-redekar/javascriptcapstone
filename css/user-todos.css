@@ -91,3 +91,10 @@ label {
     font-family: italic bold;
     font-size: 20px;
 }
+.navbar-brand{
+    font-family:'Pacifico', cursive;
+    font-size: 40px;
+    }
+.title{
+    font-family:'Pacifico', cursive;
+}

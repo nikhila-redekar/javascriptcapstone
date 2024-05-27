@@ -1,92 +1,3 @@
-/*function getToDoTasks() {
-    const userId = document.getElementById("users").value;
-    fetch(`http://localhost:8083/api/todos/byuser/${userId}`)
-    .then(response => response.json())
-    .then(data => {
-        const tasksDiv = document.getElementById("tasks");
-        tasksDiv.innerHTML = ""; // Clear previous tasks
-        data.forEach(task => {
-            tasksDiv.innerHTML += `
-                <div>
-                    <p><strong>Category:</strong> ${task.category}</p>
-                    <p><strong>Description:</strong> ${task.description}</p>
-                    <p><strong>Deadline:</strong> ${task.deadline}</p>
-                    <p><strong>Priority:</strong> ${task.priority}</p>
-                    <p><strong>Completed:</strong> ${task.completed ? "✓" : "❌"}</p>
-                </div>
-
-            `;
-        });
-    })
-    .catch(error => console.error('Error fetching tasks:', error));
-}
-
-// Fetch users and populate dropdown when page loads
-window.onload = function() {
-    fetch('http://localhost:8083/api/users')
-    .then(response => response.json())
-    .then(data => {
-        const usersDropdown = document.getElementById("users");
-        data.forEach(user => {
-            const option = document.createElement("option");
-            option.text = user.name;
-            option.value = user.id;
-            usersDropdown.add(option);
-        });
-        // Fetch tasks for the first user by default
-        getToDoTasks();
-    })
-    .catch(error => console.error('Error fetching users:', error));
-};*/
-
-/*function getToDoTasks() {
-    const userId = document.getElementById("users").value;
-    fetch(`http://localhost:8083/api/todos/byuser/${userId}`)
-    .then(response => response.json())
-    .then(data => {
-        const tasksDiv = document.getElementById("tasks");
-        tasksDiv.innerHTML = ""; // Clear previous tasks
-        let row = document.createElement("div");
-        row.classList.add("row");
-
-        data.slice(0, 3).forEach(task => { // Displaying only the first 3 tasks
-            let col = document.createElement("div");
-            col.classList.add("col-md-4"); // Bootstrap column class for medium size
-            col.innerHTML = `
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">${task.category}</h5>
-                        <p class="card-text">${task.description}</p>
-                        <p><strong>Deadline:</strong> ${task.deadline}</p>
-                        <p><strong>Priority:</strong> ${task.priority}</p>
-                        <p><strong>Completed:</strong> ${task.completed ? "✓" : "❌"}</p>
-                    </div>
-                </div>
-            `;
-            row.appendChild(col);
-        });
-        tasksDiv.appendChild(row);
-    })
-    .catch(error => console.error('Error fetching tasks:', error));
-}
-
-// Fetch users and populate dropdown when page loads
-window.onload = function() {
-    fetch('http://localhost:8083/api/users')
-    .then(response => response.json())
-    .then(data => {
-        const usersDropdown = document.getElementById("users");
-        data.forEach(user => {
-            const option = document.createElement("option");
-            option.text = user.name;
-            option.value = user.id;
-            usersDropdown.add(option);
-        });
-        // Fetch tasks for the first user by default
-        getToDoTasks();
-    })
-    .catch(error => console.error('Error fetching users:', error));
-};*/
 function getToDoTasks() {
     const userId = document.getElementById("users").value;
     fetch(`http://localhost:8083/api/todos/byuser/${userId}`)
@@ -109,7 +20,7 @@ function getToDoTasks() {
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">${task.category}</h5>
-                            <p class="card-text">${task.description}</p>
+                            <p class="card-text"><strong>Description: </strong>${task.description}</p>
                             <p><strong>Deadline:</strong> ${task.deadline}</p>
                             <p><strong>Priority:</strong> ${task.priority}</p>
                             <p><strong>Completed:</strong> ${task.completed ? "✓" : "❌"}</p>
