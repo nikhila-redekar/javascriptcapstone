@@ -2,7 +2,8 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0;
-background-color: #f4f4f4;
+/*background-color: #f4f4f4;*/
+background-color: #fff;
 }
 
 h1 {
@@ -14,7 +15,8 @@ form {
 max-width: 400px;
 margin: 20px auto;
 padding: 20px;
-background: #fff;
+/*background: #fff;*/
+background-color: #f4f4f4;
 border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -89,4 +91,11 @@ margin-top: 10px;
 .reg{
     font-family:'Pacifico', cursive;
 
+}
+.image{
+}
+.new-user{
+    width: 60%;
+    height: 70%;
+margin-top: 100px;
 }

@@ -38,7 +38,7 @@ body {
 
 /* Jumbotron Styles */
 .jumbotron {
-    background-image: url('/images/home-page-todo.jpeg');
+    background-image: url('/images/home-features.jpeg');
    /* background-color: #00B4DB;*/
    background-color: rgb(255, 247, 196);
     background-size: cover;
@@ -49,6 +49,7 @@ body {
     align-self: center;
     height: 30vw;
     width: 100%;
+    border: 2px solid gray;
 }
 
 
@@ -107,11 +108,14 @@ footer {
 }
 .text{
     font-family:'Pacifico', cursive;
+    float: left;
+    top: 50px;
+    margin-left: 50px;
 }
 .navbar-brand{
 font-family:'Pacifico', cursive;
 font-size: 40px;
 }
-h3{
+h3, h2{
     font-family:'Pacifico', cursive;
 }
